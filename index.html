@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function checkAccount(str) {
+        regaxp = /^[_a-z0-9]{6,}$/;
+        if (regaxp.test(str)) {
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
+    var account = '123abc_';
+    console.log(checkAccount(account));
+    var account = '12345';
+    console.log(checkAccount(account));
+</script>
+
+</body>
+</html>
